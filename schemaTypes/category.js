@@ -27,9 +27,17 @@ export default {
               type: 'string',
             },
             {
+              name: 'bgColor',
+              title: 'Background Color',
+              type: 'string',
+            },
+            {
               name: 'categoryId',
               title: 'Category Id',
-              type: 'string',
+              type: 'slug',
+              options: {
+                source: 'label',
+              }
             },
           ],
         },

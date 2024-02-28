@@ -1,6 +1,6 @@
 export default {
-  name: 'items',
-  title: 'Items',
+  name: 'banners',
+  title: 'Banners',
   type: 'document',
   fields: [
     {
@@ -33,7 +33,19 @@ export default {
     {
       name: 'image',
       title: 'Image',
-      type: 'image',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            {
+              name: 'image',
+              title: 'Image',
+              type: 'image',
+            },
+          ],
+        },
+      ],
     },
   ],
 }

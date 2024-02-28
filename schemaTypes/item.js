@@ -34,10 +34,9 @@ export default {
       type: 'string',
     },
     {
-      name: 'category',
-      title: 'Category',
-      type: 'reference',
-      to: [{type: 'category'}],
+      name: 'categoryId',
+      title: 'CategoryID',
+      type: 'string',
     },
   ],
 }
